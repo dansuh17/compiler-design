@@ -308,7 +308,6 @@ if __name__ == '__main__':
     parser = PredictiveParser()
     with open('./res/hw1/input.txt', 'r') as in_f, open('./res/hw1/output.txt', 'w') as out_f:
         for input_line in in_f:
-            print(input_line)
             try:
                 tree = parser.parse(input_line)
                 result = tree.print_tree('preorder')
